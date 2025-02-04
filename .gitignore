@@ -1,0 +1,12 @@
+/.cache/
+/.config/procps/
+/.config/chromium/
+/.config/htop/
+/.config/git/
+/.local/state/
+/.local/share/ranger/
+/.vim/
+/.viminfo
+/.bash_history
+/.pki/
+
