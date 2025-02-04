@@ -1,0 +1,114 @@
+# Config for sway
+# Read `man 5 sway` for a complete reference.
+
+### Variables
+#
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+# Your preferred terminal emulator
+set $term foot
+# Your preferred web browser
+set $web chromium
+# Your preferred TUI file manager
+set $file ranger
+
+### Output configuration
+#
+# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+output * bg /nix/store/*-sway-unwrapped-*/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+
+### Key bindings
+#
+# Basics:
+#
+    # Start a terminal
+    bindsym $mod+t exec $term
+    
+    # Start a web browser
+    bindsym $mod+h exec $web
+
+    # Start a file manager
+    bindsym $mod+f exec $term $file
+
+    # Kill focused window
+    bindsym $mod+g kill
+
+    # Drag floating windows by holding down $mod and left mouse button.
+    # Resize them with right mouse button + $mod.
+    # Despite the name, also works for non-floating windows.
+    # Change normal to inverse to use left mouse button for resizing and right
+    # mouse button for dragging.
+    floating_modifier $mod normal
+
+    # Reload the configuration file
+    bindsym $mod+Shift+c reload
+
+    # Exit sway (logs you out of your Wayland session)
+    bindsym $mod+Shift+g exec swaymsg exit
+#
+# Moving around:
+#
+    # Use $mod+[up|down|left|right]
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+
+    # Move with arrow keys
+    bindsym $mod+Shift+Left move left
+    bindsym $mod+Shift+Down move down
+    bindsym $mod+Shift+Up move up
+    bindsym $mod+Shift+Right move right
+#
+# Layout stuff:
+#
+    # You can "split" the current object of your focus with
+    # $mod+b or $mod+v, for horizontal and vertical splits
+    # respectively.
+    bindsym $mod+b splith
+    bindsym $mod+v splitv
+
+    # Toggle the current focus between tiling and floating mode
+    bindsym $mod+Shift+space floating toggle
+
+    # Swap focus between the tiling area and the floating area
+    bindsym $mod+space focus mode_toggle
+#
+# Resizing containers:
+#
+mode "resize" {
+    # Arrow keys
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+#
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+bar {
+    # Set the font of the status command
+    font Code New Roman Nerd Font Normal 11
+    # Set bar position
+    position bottom
+
+    # Disable workspace indicator
+    workspace_buttons no
+
+    # When the status_command prints a new line to stdout, swaybar updates.
+    # status_command while echo "a"; do sleep 1; done
+    # status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+    status_command while ~/.config/sway/status.sh; do sleep 1; done
+
+    colors {
+        statusline #ffffff
+        background #000000
+    }
+}
