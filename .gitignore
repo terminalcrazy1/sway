@@ -6,6 +6,7 @@
 /.config/git/
 /.local/state/
 /.local/share/ranger/
+/.local/share/nix/
 /.vim/
 /.viminfo
 /.bash_history
