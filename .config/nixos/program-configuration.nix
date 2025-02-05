@@ -11,8 +11,9 @@
     ranger
     vim
     ungoogled-chromium
-    bc
     git
+		gcc
+		make
     llama-cpp
     htop
   ];
