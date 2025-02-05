@@ -8,5 +8,5 @@ fi
 # User specific environment and startup programs
 export EDITOR=vi
 
-# Start Sway when finished
+# Start SwayWM when finished
 exec sway
