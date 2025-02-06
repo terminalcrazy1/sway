@@ -12,8 +12,7 @@
     vim
     ungoogled-chromium
     git
-		gcc
-		make
+    bc
     llama-cpp
     htop
   ];
