@@ -4,6 +4,7 @@
 /.config/chromium/
 /.config/htop/
 /.config/git/
+/.config/pulse/
 /.local/state/
 /.local/share/ranger/
 /.local/share/nix/
