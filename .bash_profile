@@ -6,7 +6,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-export EDITOR=vi
+export EDITOR=micro
 
 # Start SwayWM when finished
 exec sway
