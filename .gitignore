@@ -8,8 +8,5 @@
 /.local/state/
 /.local/share/ranger/
 /.local/share/nix/
-/.vim/
-/models/unxzed/
-/.viminfo
 /.bash_history
 /.pki/
