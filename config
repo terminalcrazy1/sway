@@ -14,8 +14,9 @@ set $file dolphin
 
 ### Output configuration
 #
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /nix/store/*-sway-unwrapped-*/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+# Default wallpaper (more resolutions are available in @datadir@/backgrounds/sway/)
+output * bg output * bg @datadir@/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+#
 
 ### Key bindings
 #
