@@ -5,7 +5,7 @@ These dotfiles contain my ricing for sway.
  - config: config does everything else. It defines modes, keybinds, font, and my status_command
 ## Dependencies
 This project requires a few things to be installed. Namely, the font: `Code New Roman by Nerdfonts`, and a few commands `top, grep, tail, awk, echo, bc, cat, free,` and `date`. Of course, you also need `sway`.
-Using **Arch Linux**, these commands can be installed with the command:
+Using **Arch Linux**, these applications can be installed with the command:
 ```
 pacman -Sy otf-codenewroman-nerd bc procps-ng grep gawk dateutils sway
 ```
