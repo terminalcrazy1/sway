@@ -10,5 +10,6 @@ My principle for the making of these dotfiles is that of a minimal sway config w
 This project requires a few things to be installed. Namely, the font: `Code New Roman by Nerdfonts`, and a few commands `top, grep, tail, awk, echo, bc, cat, free,` and `date`. Of course, you also need `sway`.
 Using **Arch Linux**, these applications can be installed with the command:
 ```
-pacman -Sy otf-codenewroman-nerd bc procps-ng grep gawk dateutils sway foot
+pacman -Sy otf-codenewroman-nerd bc procps-ng grep gawk dateutils sway
 ```
+I recommend Gnome Terminal, Firefox, and Nemo for `$term, $web,` and `$file`
