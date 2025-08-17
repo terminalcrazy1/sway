@@ -12,4 +12,4 @@ Using **Arch Linux**, these applications can be installed with the command:
 ```
 pacman -Sy otf-codenewroman-nerd bc procps-ng grep gawk dateutils sway
 ```
-I recommend Gnome Terminal, Firefox, and Nemo for `$term, $web,` and `$file`
+I recommend Gnome Terminal, Firefox, and Nemo for `$term, $web,` and `$file`. If you wish to use other programs, edit the config file.
