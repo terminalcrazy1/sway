@@ -1,3 +1,4 @@
+I am not currently using these, so they won't receive updates
 # Sway
 **Sway is a tiling window manager written using wlroots. It is extremely lightweight.**
 
