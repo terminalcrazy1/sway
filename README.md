@@ -1,4 +1,4 @@
-I am not currently using these, so they won't receive updates
+I am not currently using these, so they won't receive updates. Not archived, as I may return to them.
 # Sway
 **Sway is a tiling window manager written using wlroots. It is extremely lightweight.**
 
